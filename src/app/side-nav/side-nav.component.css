@@ -1,0 +1,21 @@
+.example-container {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #FAFAFA;
+}
+.active{
+    background-color: white;    
+}
+#sidenavLink{
+    cursor: pointer;
+}
+mat-sidenav {
+ width: 250px;    
+ background: #FAFAFA;
+}
+.cursor-pointer {
+    cursor: pointer;
+}
