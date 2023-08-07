@@ -1,0 +1,51 @@
+<div>
+    <p class="fw-bold fs-6">
+        Dashboard
+    </p>
+    <div class="row w-100 my-5">
+        <div class="col-lg-3 col-md-6 px-4">
+            <div class="bg-white py-3 px-2 rounded">
+                <p class="text-muted fw-bold">Total Balance</p>
+                <div class="d-flex justify-content-between">
+                    <div class="d-flex flex-wrap">
+                        <p class="pe-1 fs-3 fw-bold">$53,000</p>
+                        <p class="ps-1 text-success">+30%</p>
+                    </div>
+                    <p class="bg-primary rounded px-3 py-2"><i class="fa fa-dollar bg-white rounded-circle text-primary p-1"></i></p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6 px-4">
+            <div class="bg-white py-3 px-2 rounded">
+                <p class="text-muted fw-bold">Interacted Users</p>
+                <div class="d-flex justify-content-between">
+                    <div class="d-flex flex-wrap">
+                        <p class="pe-1 fs-3 fw-bold">$3,200</p>
+                        <p class="ps-1 text-success">+30%</p>
+                    </div>
+                    <p class="bg-primary rounded px-3 py-2"><i class="fa fa-group bg-white rounded-circle text-primary p-1"></i></p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-6 px-4">
+            <div class="bg-white py-3 px-2 rounded">
+                <p class="text-muted fw-bold">ENS Users</p>
+                <div class="d-flex justify-content-between">
+                    <div class="d-flex flex-wrap">
+                        <p class="pe-1 fs-3 fw-bold">$1,200</p>
+                        <p class="ps-1 text-success">+30%</p>
+                    </div>
+                    <p class="bg-primary rounded px-3 py-2"><i class="fa fa-heart bg-white rounded-circle text-primary p-1"></i></p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-6 rounded"></div>
+    </div>
+    <!-- Chart -->
+    <div class="row w-100">
+        <div class="col-md-6">
+            <canvas baseChart [datasets]="chartData" [labels]="chartLabels" [options]="chartOptions"  [type]="'bar'"></canvas>
+        </div>
+        <div class="col-md-6"></div>
+    </div>
+</div>
