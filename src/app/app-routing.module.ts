@@ -1,7 +1,25 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { SideNavComponent } from './side-nav/side-nav.component';
 
-const routes: Routes = [];
+const routes: Routes = [
+  {
+    path: '', 
+    redirectTo: 'pages', 
+    pathMatch: 'full'
+  },
+  {
+    path: 'pages',
+    component: SideNavComponent,
+    children: [
+      {
+        path: 'dashboard',
+        component: DashboardComponent
+      }
+    ]
+  }
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
