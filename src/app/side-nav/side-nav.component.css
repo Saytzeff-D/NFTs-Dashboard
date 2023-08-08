@@ -7,7 +7,7 @@
     background: #FAFAFA;
 }
 .active{
-    background-color: white;    
+    background-color: white !important;    
 }
 #sidenavLink{
     cursor: pointer;

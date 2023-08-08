@@ -6,8 +6,22 @@
         <p class="h5 text-center text-muted pt-5 ps-4 pe-5 fs-5">Decentralised Dashboard</p>
         <hr class="mx-4" />            
       <mat-nav-list class="ps-4 pe-5">
-        <a mat-list-item routerLinkActive="active rounded me-5 p-2 mb-2 shadow-lg" routerLink="dashboard"> <span routerLinkActive="fw-normal" class="text-muted">Dashboard</span></a>
-        <a mat-list-item routerLinkActive="active" routerLink="recent-visit mb-2"> NFTs</a>        
+        <a mat-list-item routerLinkActive="active rounded me-5 p-2 mb-4 shadow" routerLink="dashboard"> 
+          <span [class]="router.url == '/pages/dashboard' ? 'bg-primary shadow p-1 rounded mx-2 text-muted' : 'bg-white shadow p-1 rounded mx-2 text-muted'" >
+            <i [class]="router.url == '/pages/dashboard' ? 'text-white fa fa-tachometer' : 'fa fa-tachometer'" ></i>
+          </span>
+          <span routerLinkActive="" class="text-muted">
+            Dashboard
+          </span>
+        </a>
+        <a mat-list-item routerLinkActive="active rounded my-2 me-5 p-1 mb-2 shadow-lg" routerLink="nfts">
+          <span [class]="router.url == '/pages/nfts' ? 'bg-primary shadow p-1 rounded mx-2 text-muted' : 'bg-white shadow p-1 rounded mx-2 text-muted'" >
+            <i [class]="router.url == '/pages/nfts' ? 'text-white fa fa-tachometer' : 'fa fa-tachometer'" ></i>
+          </span>
+          <span routerLinkActive="" class="text-muted">
+            NFTs
+          </span>
+        </a>        
       </mat-nav-list>      
     </mat-sidenav>
     <mat-sidenav-content class="pageContent bg-bmi">
