@@ -12,16 +12,27 @@ export class DashboardComponent implements OnInit {
     label: 'Sales',
     barThickness: 17,
     borderRadius: 5,
-    backgroundColor: 'blue'
+    borderColor: 'red',
+    backgroundColor: '#1890FF'    
+    }
+  ]
+  public lineChartData = [
+    {
+    data: [350, 50, 300, 220, 500, 280, 400, 220, 500],
+    label: 'Sales',
+    barThickness: 17,
+    borderRadius: 5,
+    // backgroundColor: 'green',
+    // theme: 'red'
     },
-    // {
-    // data: [120, 455, 100, 340],
-    // label: 'Account B'
-    // },
-    // {
-    // data: [45, 67, 800, 500],
-    // label: 'Account C'
-    // }
+    {
+    data: [20, 90, 50, 150, 290, 290, 350, 230, 400],
+    label: 'Traffic',
+    barThickness: 17,
+    borderRadius: 5,
+    backgroundColor: 'blue',
+    // theme: 'red'
+    },   
   ]
   public chartLabels = [    
     'Feb',
@@ -35,7 +46,8 @@ export class DashboardComponent implements OnInit {
     'Oct'    
   ]
   public chartOptions = {
-    responsive: true,    
+    responsive: true, 
+    aspectRatio:2.5,    
   }
 
   ngOnInit(): void {

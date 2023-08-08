@@ -3,7 +3,7 @@
         Dashboard
     </p>
     <div class="row w-100 my-5">
-        <div class="col-lg-3 col-md-6 px-4">
+        <div class="col-lg-3 col-md-6 my-md-0 my-1 px-4">
             <div class="bg-white py-3 px-2 rounded">
                 <p class="text-muted fw-bold">Total Balance</p>
                 <div class="d-flex justify-content-between">
@@ -15,7 +15,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-lg-3 col-md-6 px-4">
+        <div class="col-lg-3 col-md-6 my-md-0 my-1 px-4">
             <div class="bg-white py-3 px-2 rounded">
                 <p class="text-muted fw-bold">Interacted Users</p>
                 <div class="d-flex justify-content-between">
@@ -27,7 +27,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-md-3 col-6 px-4">
+        <div class="col-lg-3 col-md-6 my-md-0 my-1 px-4">
             <div class="bg-white py-3 px-2 rounded">
                 <p class="text-muted fw-bold">ENS Users</p>
                 <div class="d-flex justify-content-between">
@@ -39,13 +39,27 @@
                 </div>
             </div>
         </div>
-        <div class="col-md-3 col-6 rounded"></div>
+        <div class="col-md-3 col-6 my-md-0 my-1 rounded"></div>
     </div>
     <!-- Chart -->
     <div class="row w-100">
-        <div class="col-md-6">
-            <canvas baseChart [datasets]="chartData" [labels]="chartLabels" [options]="chartOptions"  [type]="'bar'"></canvas>
+        <div class="col-md-6 my-md-0 my-1">
+            <div class="bg-white p-3 rounded shadow">
+                <canvas baseChart [datasets]="chartData" [legend]="false" [labels]="chartLabels" [options]="chartOptions"  [type]="'bar'"></canvas>
+                <p class="fw-bold fs-5">Active Users</p>
+                <p class="text-muted fw-less-bold">
+                    We have created multiple options for you to put together and customise into pixel perfect pages.
+                </p>
+            </div>
         </div>
-        <div class="col-md-6"></div>
+        <div class="col-md-6 my-md-0 my-1">
+            <div class="bg-white p-3 shadow rounded">
+                <p class="fw-bold fs-5">Active Users</p>
+                <p class="text-muted fw-less-bold">                    
+                    than last week +30%
+                </p>
+                <canvas baseChart [datasets]="lineChartData" [labels]="chartLabels" [options]="chartOptions"  [type]="'line'"></canvas>
+            </div>
+        </div>
     </div>
 </div>
