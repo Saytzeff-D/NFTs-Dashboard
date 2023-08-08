@@ -7,7 +7,7 @@ import { NftsComponent } from './nfts/nfts.component';
 const routes: Routes = [
   {
     path: '', 
-    redirectTo: 'pages', 
+    redirectTo: 'pages/dashboard', 
     pathMatch: 'full'
   },
   {
