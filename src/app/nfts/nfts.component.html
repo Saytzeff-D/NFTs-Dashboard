@@ -1,0 +1,57 @@
+<div>
+    <p class="fw-bold fs-6">
+        NFTs
+    </p>
+    <div class="bg-white shadow rounded p-4">
+        <p class="fw-bold fs-6">
+            NFTs Tables
+        </p>
+        <div class="table-responsive mt-4">
+            <table class="table table-hoverable">
+                <thead>
+                    <tr>
+                        <th>
+                            Author
+                        </th>
+                        <th>
+                            Function
+                        </th>
+                        <th>
+                            Status
+                        </th>
+                        <th>
+                            Employed
+                        </th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let i = index; let each of arr">
+                        <td class="p-3">
+                            <div class="d-flex">
+                                <img src="../../assets//user.jpg" class="rounded" height="35px" width="40px" />
+                               <div class="ms-4">
+                                    <p class="my-0 fw-less-bold">Micheal John</p>
+                                    <p class="my-0 text-muted">michael@mail.com</p>
+                               </div>
+                            </div>
+                        </td>
+                        <td class="p-3">
+                            <p class="my-0 fw-less-bold">Manager</p>
+                            <p class="my-0 text-muted">Organization</p>
+                        </td>
+                        <td class="p-3">
+                            <button class="btn btn-primary btn">ONLINE</button>
+                        </td>
+                        <td class="p-3">
+                            23/04/18
+                        </td>
+                        <td class="p-3">
+                            <p class="text-muted fw-less-bold">Edit</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
