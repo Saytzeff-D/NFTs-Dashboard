@@ -9,12 +9,14 @@ import { NgChartsModule } from 'ng2-charts';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { MaterialModule } from './material/material.module';
 import { SideNavComponent } from './side-nav/side-nav.component';
+import { NftsComponent } from './nfts/nfts.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     DashboardComponent,
-    SideNavComponent
+    SideNavComponent,
+    NftsComponent
   ],
   imports: [
     BrowserModule,
