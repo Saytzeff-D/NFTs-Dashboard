@@ -3,12 +3,17 @@ import { RouterModule, Routes } from '@angular/router';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { SideNavComponent } from './side-nav/side-nav.component';
 import { NftsComponent } from './nfts/nfts.component';
+import { HomeComponent } from './home/home.component';
 
 const routes: Routes = [
   {
     path: '', 
-    redirectTo: 'pages/dashboard', 
+    redirectTo: 'home', 
     pathMatch: 'full'
+  },
+  {
+    path: 'home',
+    component: HomeComponent
   },
   {
     path: 'pages',

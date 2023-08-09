@@ -10,13 +10,15 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { MaterialModule } from './material/material.module';
 import { SideNavComponent } from './side-nav/side-nav.component';
 import { NftsComponent } from './nfts/nfts.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     DashboardComponent,
     SideNavComponent,
-    NftsComponent
+    NftsComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,

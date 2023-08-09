@@ -1,0 +1,20 @@
+.bg-header {
+    background-color: #5F45FC;
+    color: white !important;
+}
+.fs-7 {
+    font-size: smaller;
+}
+.fw-less-bold {
+    font-weight: 500;
+}
+.bg-pool {
+    background-color: #5E45FC;
+    color: white !important;
+}
+.main-home {
+    background-color: #F6F6F6;
+}
+.bg-balances {
+    background-color: #5F45FC;
+}
