@@ -11,6 +11,8 @@ import { MaterialModule } from './material/material.module';
 import { SideNavComponent } from './side-nav/side-nav.component';
 import { NftsComponent } from './nfts/nfts.component';
 import { HomeComponent } from './home/home.component';
+import { NavComponent } from './nav/nav.component';
+import { PoolTableComponent } from './pool-table/pool-table.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { HomeComponent } from './home/home.component';
     DashboardComponent,
     SideNavComponent,
     NftsComponent,
-    HomeComponent
+    HomeComponent,
+    NavComponent,
+    PoolTableComponent
   ],
   imports: [
     BrowserModule,
