@@ -1,37 +1,5 @@
 <div>
-    <nav class="navbar navbar-expand-lg navbar-light bg-header">
-        <div class="container-fluid text-white">
-          <a class="navbar-brand text-white" href="#">Casama</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarText">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link text-white active fs-6" aria-current="page" href="#">Dashboard</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-white fs-6" href="#">Browse Pool</a>
-              </li>              
-            </ul>
-            <div class="navbar-text d-flex">
-                <span class="text-white">
-                  <i class="fa fa-bell fa-lg text-white px-2"></i>
-                </span>
-                <span class="dropdown px-3">                
-                    <a class="nav-link dropdown-toggle text-white fs-6" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        <img src="../../assets//user.jpg" width="20px" height="20px" class="rounded-circle me-1" />Timothy
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="#">Action</a></li>                        
-                        <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="#">Connect MetaMask</a></li>
-                    </ul>            
-                </span>
-            </div>
-          </div>
-        </div>
-    </nav>
+    <app-nav></app-nav>
     <div class="main-home">
         <div class="content px-md-5 px-2">
             <div class="d-flex justify-content-between flex-wrap py-4">
@@ -61,8 +29,13 @@
                             </div>
                         </div>
                         <p class="fs-4 fw-bold text-white py-3">
-                            $12, 223
+                            $12,223
                         </p>
+                        <div class="legend text-white fs-7 fw-bold">
+                            <p>$14,552 Total Income</p>
+                            <p>$11,883 Earned</p>
+                            <p>$2,668 Expenses</p>
+                        </div>
                     </div>
                 </div>
                 <div class="col-md-8">
@@ -70,27 +43,51 @@
                         My Pools
                     </p>
                     <div class="row w-100">
-                        <div class="col-md-6">
+                        <div class="col-md-6 mb-4">
                             <div class="bg-white rounded p-3">
                                 <div class="d-flex justify-content-between">
                                     <p class="fw-less-bold fs-6">ChainLink to Vechain</p>
                                     <div class="main-home rounded-pill fs-6 fw-bold py-0 px-2 pt-1">Crypto</div>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="bg-white rounded p-3">
-                                <div class="d-flex justify-content-between">
-                                    <p class="fw-less-bold fs-6">ChainLink to Vechain</p>
-                                    <div class="main-home rounded-pill fs-6 fw-bold py-0 px-2 pt-1">Crypto</div>
+                                <div class="py-3">                                    
+                                    <span class="fs-4 fw-bold">141 xrp </span> <span class="fs-7 fw-bold">/ $240 earned</span>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="row w-100">
-                        <div class="col-md-6"></div>
-                        <div class="col-md-6"></div>
-                    </div>
+                        <div class="col-md-6 mb-4">
+                            <div class="bg-white rounded p-3">
+                                <div class="d-flex justify-content-between">
+                                    <p class="fw-less-bold fs-6">Send to USDC</p>
+                                    <div class="main-home rounded-pill fs-6 fw-bold py-0 px-2 pt-1">Crypto</div>
+                                </div>
+                                <div class="py-3">                                    
+                                    <span class="fs-4 fw-bold">231 USDC </span> <span class="fs-7 fw-bold">/ $240 earned</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-4">
+                            <div class="bg-white rounded p-3">
+                                <div class="d-flex justify-content-between">
+                                    <p class="fw-less-bold fs-6">Kusama to AAVE</p>
+                                    <div class="main-home rounded-pill fs-6 fw-bold py-0 px-2 pt-1">Crypto</div>
+                                </div>
+                                <div class="py-3">                                    
+                                    <span class="fs-4 fw-bold">141 xrp </span> <span class="fs-7 fw-bold">/ $240 earned</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-4">
+                            <div class="bg-white rounded p-3">
+                                <div class="d-flex justify-content-between">
+                                    <p class="fw-less-bold fs-6">BNB to Polygon Matic</p>
+                                    <div class="main-home rounded-pill fs-6 fw-bold py-0 px-2 pt-1">NFT</div>
+                                </div>
+                                <div class="py-3">                                    
+                                    <span class="fs-4 fw-bold">231 USDC </span> <span class="fs-7 fw-bold">/ $240 earned</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>                    
                 </div>
             </div>
         </div>
